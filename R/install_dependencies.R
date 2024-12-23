@@ -26,14 +26,11 @@ if (!require("purrr")) {
 # -----------------------------------------------------------------------------
 
 required_packages <- c(
-  # path construction and other file operations
-  "fs",
-  # reading/writing Stata files
-  "haven",
-  # data munging
-  "dplyr",
-  # composing interactive table
-  "reactable"
+  "fs", # path construction and other file operations
+  "haven", # reading/writing Stata files
+  "dplyr", # data munging
+  "rlang", # metaprogramming
+  "reactable" # composing interactive table
 )
 
 #' Install package if missing on system
