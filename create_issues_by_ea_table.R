@@ -98,10 +98,10 @@ reactable::reactable(
 
   # ),
   details = function(index) {
-    
+
     # select issues for the EA whose details are shown
     issues_in_ea <- issues_w_ea |>
-	    dplyr::filter(
+      dplyr::filter(
         issues_w_ea[[ea_vars[1]]] == eas[[ea_vars[1]]][index] &
         issues_w_ea[[ea_vars[2]]] == eas[[ea_vars[2]]][index]
       ) |>
@@ -123,4 +123,5 @@ reactable::reactable(
     return(issues_details)
 
   }
+
 )
